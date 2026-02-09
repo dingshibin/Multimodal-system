@@ -18,7 +18,7 @@ class QwenTeachingPlanGenerator:
         model: str = "qwen3-max",
         temperature: float = 0.7,
         top_p: float = 0.3,
-        save_dir: str = r"D:\HuaweiMoveData\Users\16671\Desktop\毕业论文评测代码\论文完整流程\storage\lesson_db"
+        save_dir: str = r"storage\teaching_db"
     ):
         # ========= API Key =========
         if api_key is None:
@@ -184,14 +184,14 @@ def interactive_input() -> Dict[str, str]:
 # =====================================================
 if __name__ == "__main__":
 
-    QWEN_API_KEY = "sk-a501046d49284d6995d18c2c571204b1"
+    QWEN_API_KEY = ""
 
     generator = QwenTeachingPlanGenerator(
         api_key=QWEN_API_KEY,
         model="qwen3-max",
         temperature=0.7,
         top_p=0.3,
-        save_dir=r"D:\HuaweiMoveData\Users\16671\Desktop\毕业论文评测代码\论文完整流程\storage\teaching_plan"
+        save_dir=r"\storage\teaching_plan"
     )
 
     try:
@@ -212,3 +212,4 @@ if __name__ == "__main__":
 
     except Exception as e:
         print(f"\n❌ 程序错误：{e}")
+
