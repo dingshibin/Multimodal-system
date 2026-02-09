@@ -10,17 +10,17 @@ from multimodal.tts_xunfei import XunfeiTTSGenerator
 from multimodal.video_seedance import SeedanceVideoGenerator
 
 # ================= 绝对路径配置 =================
-STORAGE_ROOT = r'D:\HuaweiMoveData\Users\16671\Desktop\毕业论文评测代码\论文完整流程\storage'
+STORAGE_ROOT = 'storage'
 LESSON_DB = os.path.join(STORAGE_ROOT, "teaching_db")  # 统一教案库
 PROMPT_DB = os.path.join(STORAGE_ROOT, "prompt_db")  # 统一提示词库
 OUTPUT_ROOT = os.path.join(STORAGE_ROOT, "output")  # 媒体素材根目录
 
 KEYS = {
-    "QWEN": "sk-a501046d49284d6995d18c2c571204b1",
-    "XUNFEI_APPID": "8a84b58b",
-    "XUNFEI_KEY": "6329a2481aff84772ebcbd085fa6d5db",
-    "XUNFEI_SECRET": "YjYwZGFmYWQ4MzA4OTIxZDM1MzAyMjg1",
-    "ARK_KEY": "d53ae114-34b8-4bdb-8f9b-48a4e1c7a817"
+    "QWEN": "your-api-key",
+    "XUNFEI_APPID": "",
+    "XUNFEI_KEY": "",
+    "XUNFEI_SECRET": "",
+    "ARK_KEY": ""
 }
 
 
@@ -85,4 +85,5 @@ def run_system():
 
 
 if __name__ == "__main__":
+
     run_system()
